@@ -44,7 +44,7 @@ dependencies {
     //compile 'com.google.android.gms:play-services-ads:8.3.0'
     //Compiling projects here
     compile project(':jokeTellerJavaLib')
-    compile project(':backend')
+    //compile project(':backend')
     compile project(':jokeTellerAndroidLib')
 
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
