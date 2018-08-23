@@ -35,5 +35,5 @@ dependencies {
 
 
         //cloudSdkHome = "Air Drive 1/Users/sumairzamir/Downloads/google-cloud-sdk"
-        appengine.tools.cloudSdkHome = "Downloads/google-cloud-sdk"
+        appengine.tools.cloudSdkHome = "/Users/sumairzamir/Downloads/google-cloud-sdk"
 
