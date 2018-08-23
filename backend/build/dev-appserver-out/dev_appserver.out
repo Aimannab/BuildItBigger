@@ -1,33 +1,25 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-Aug 23, 2018 2:20:33 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+Aug 23, 2018 9:19:48 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value '/Users/sumairzamir/Downloads/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/sumairzamir/Desktop/BuildItBigger/backend/build/exploded-backend/WEB-INF/appengine-web.xml'
-Aug 23, 2018 2:20:33 PM com.google.apphosting.utils.jetty.JettyLogger info
+Aug 23, 2018 9:19:49 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-Aug 23, 2018 1:20:34 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+Aug 23, 2018 8:19:49 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
 WARNING: Your working directory, (/Users/sumairzamir/Desktop/BuildItBigger/backend) is not equal to your 
 web application root (/Users/sumairzamir/Desktop/BuildItBigger/backend/build/exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-Aug 23, 2018 1:20:34 PM com.google.apphosting.utils.jetty.JettyLogger info
+Aug 23, 2018 8:19:49 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: jetty-6.1.x
-Aug 23, 2018 1:20:35 PM com.google.apphosting.utils.jetty.JettyLogger info
+Aug 23, 2018 8:19:50 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Started SelectChannelConnector@localhost:8080
-Aug 23, 2018 1:20:35 PM com.google.appengine.tools.development.AbstractModule startup
+Aug 23, 2018 8:19:50 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-Aug 23, 2018 1:20:35 PM com.google.appengine.tools.development.AbstractModule startup
+Aug 23, 2018 8:19:50 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-Aug 23, 2018 2:20:35 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+Aug 23, 2018 9:19:50 PM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
-Aug 23, 2018 2:20:47 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
-INFO: Local Datastore initialized: 
-	Type: High Replication
-	Storage: /Users/sumairzamir/Desktop/BuildItBigger/backend/build/exploded-backend/WEB-INF/appengine-generated/local_db.bin
-Aug 23, 2018 2:20:47 PM com.google.appengine.api.datastore.dev.LocalDatastoreService load
-INFO: The backing store, /Users/sumairzamir/Desktop/BuildItBigger/backend/build/exploded-backend/WEB-INF/appengine-generated/local_db.bin, does not exist. It will be created.
-Aug 23, 2018 2:20:48 PM com.google.appengine.tools.development.LocalResourceFileServlet doGet
-WARNING: No file found for: /favicon.ico
-Aug 23, 2018 2:21:02 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
+Aug 23, 2018 9:20:57 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
 WARNING: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-Aug 23, 2018 2:21:02 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
+Aug 23, 2018 9:20:57 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
 WARNING: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
