@@ -7,7 +7,11 @@ package com.example.android.joketellerlib;
 public class JokeTeller {
 
     public String tellAJoke() {
-        String joke = "Why did the chicken cross the road?";
+        String joke = "Mia: Three tomatoes are walkin' down the street. " +
+                "Papa Tomato, Mama Tomato and Baby Tomato. " +
+                "Baby Tomato starts lagging behind, and Papa Tomato gets really angry. " +
+                "Goes back and squishes him and says: " +
+                "Ketchup. -Pulp Fiction";
         return joke;
     }
 }

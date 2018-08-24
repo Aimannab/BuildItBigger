@@ -97,6 +97,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
         JokeTeller joker = new JokeTeller();
-        Toast.makeText(this, joker.tellAJoke(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, joker.tellAJoke(), Toast.LENGTH_LONG).show();
     }
 }
