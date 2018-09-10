@@ -1,38 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-/*Adding flavors
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
-
-    defaultConfig {
-        applicationId "com.udacity.gradle.builditbigger"
-        minSdkVersion 15
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    productFlavors {
-        free {
-            applicationId "com.udacity.gradle.builditbigger.free"
-        }
-        paid {
-            applicationId "com.udacity.gradle.builditbigger.paid"
-        }
-    }
-}
-*/
-
 buildscript {
 
         repositories {
