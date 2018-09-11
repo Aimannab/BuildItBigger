@@ -203,5 +203,9 @@
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.0.0" level="project" />
     <orderEntry type="module" module-name="jokeTellerJavaLib" />
     <orderEntry type="module" module-name="jokeTellerAndroidLib" />
+    <orderEntry type="module" module-name="jokeTellerJavaLib" />
+    <orderEntry type="module" module-name="jokeTellerAndroidLib" />
+    <orderEntry type="module" module-name="jokeTellerJavaLib" />
+    <orderEntry type="module" module-name="jokeTellerAndroidLib" />
   </component>
 </module>
