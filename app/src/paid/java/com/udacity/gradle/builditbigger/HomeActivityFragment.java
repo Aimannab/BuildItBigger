@@ -1,21 +1,15 @@
+package com.udacity.gradle.builditbigger;
+
 import android.app.Fragment;
-import android.content.Context;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Pair;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
-import com.udacity.gradle.builditbigger.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
-import java.io.IOException;
-
-
-public class HomeActivityFragment extends Fragment{
+public class HomeActivityFragment extends Fragment {
 
     public HomeActivityFragment() {
     }
