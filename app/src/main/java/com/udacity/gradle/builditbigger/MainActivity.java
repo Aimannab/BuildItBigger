@@ -1,6 +1,7 @@
 package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 import android.util.Pair;
 
+import com.example.android.joketellerandroidlib.JokesActivity;
 import com.example.android.joketellerlib.JokeTeller;
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -18,6 +20,8 @@ import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 
 import java.io.IOException;
+
+import static com.example.android.joketellerandroidlib.JokesFragment.MOVIE_JOKE_KEY_EXTRA;
 
 /**
  * Created by Aiman Nabeel on 31/07/2018.
@@ -103,6 +107,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void tellJoke(View view) {
         JokeTeller joker = new JokeTeller();
-        Toast.makeText(this, joker.tellAJoke(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, joker.tellAJoke(), Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, JokesActivity.class);
+        intent.putExtra(MOVIE_JOKE_KEY_EXTRA, joker.tellAJoke());
+        startActivity(intent);
     }
 }
