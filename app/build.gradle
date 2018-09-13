@@ -42,7 +42,7 @@ android {
             applicationId "com.udacity.gradle.builditbigger.paid"
         }
     }
-    sourceSets { main { java.srcDirs = ['src/main/java', 'src/paid/java/', 'src/free/java/'] } }
+    //sourceSets { main { java.srcDirs = ['src/main/java', 'src/paid/java/', 'src/free/java/'] } }
 }
 
 dependencies {
