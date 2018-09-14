@@ -28,7 +28,7 @@ public class JokeTest extends AndroidTestCase{
             Context context = InstrumentationRegistry.getTargetContext();
             asyncTask.execute(new Pair<Context, String>(context, "Manfred"));
 
-            String joke = asyncTask.get(30, TimeUnit.SECONDS);
+            String joke = asyncTask.get(60, TimeUnit.SECONDS);
 
             assertTrue(joke.length()>0);
         }

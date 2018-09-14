@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ * Created by Aiman Nabeel on 13/09/2018.
+ */
+
 public class JokesActivity extends AppCompatActivity {
 
     @Override

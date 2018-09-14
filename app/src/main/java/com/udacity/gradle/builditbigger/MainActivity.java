@@ -59,7 +59,7 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
         try {
             return myApiService.tellJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            return null;
         }
     }
 
@@ -77,9 +77,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Manfred"));
-
     }
 
 
@@ -111,5 +108,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, JokesActivity.class);
         intent.putExtra(MOVIE_JOKE_KEY_EXTRA, joker.tellAJoke());
         startActivity(intent);
+
+        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Manfred"));
+
     }
 }
