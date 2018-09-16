@@ -30,7 +30,7 @@ import static com.example.android.joketellerandroidlib.JokesFragment.MOVIE_JOKE_
 class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
-    public static String AsyncError = "Error Getting Joke";
+    //public static String AsyncError = "Error Getting Joke";
 
 
     //Ref: https://github.com/GoogleCloudPlatform/gradle-appengine-templates/tree/77e9910911d5412e5efede5fa681ec105a0f02ad/HelloEndpoints#2-connecting-your-android-app-to-the-backend
