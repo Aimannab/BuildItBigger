@@ -33,11 +33,6 @@ public class JokeTest extends AndroidTestCase{
     @Test
     public void testAsyncTask() {
 
-        JokeTeller joker = new JokeTeller();
-        Intent intent = new Intent(context, JokesActivity.class);
-        intent.putExtra(MOVIE_JOKE_KEY_EXTRA, joker.tellAJoke());
-        context.startActivity(intent);
-
         EndpointsAsyncTask asyncTask = new EndpointsAsyncTask();
             //Extracting context using InstrumentationRegistry
             //Context context = InstrumentationRegistry.getTargetContext();
@@ -46,7 +41,7 @@ public class JokeTest extends AndroidTestCase{
             try {
             String joke = asyncTask.get();
             Log.d(TAG, "Joke text: " + joke);
-                assertNotNull(joke);
+                //assertNotNull(joke);
                 assertTrue(joke.length()>0);
         }
 
