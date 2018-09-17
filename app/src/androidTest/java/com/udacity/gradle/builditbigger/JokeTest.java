@@ -29,11 +29,12 @@ public class JokeTest extends AndroidTestCase{
     private static final String TAG = JokeTest.class.getSimpleName();
     //Extracting context using InstrumentationRegistry
     Context context = InstrumentationRegistry.getTargetContext();
+    EndpointsAsyncTask.Callback callback;
 
     @Test
     public void testAsyncTask() {
 
-        EndpointsAsyncTask asyncTask = new EndpointsAsyncTask();
+        EndpointsAsyncTask asyncTask = new EndpointsAsyncTask(callback);
             //Extracting context using InstrumentationRegistry
             //Context context = InstrumentationRegistry.getTargetContext();
             asyncTask.execute(new Pair<Context, String>(context, "Manfred"));
@@ -41,7 +42,7 @@ public class JokeTest extends AndroidTestCase{
             try {
             String joke = asyncTask.get();
             Log.d(TAG, "Joke text: " + joke);
-                //assertNotNull(joke);
+                assertNotNull(joke);
                 assertTrue(joke.length()>0);
         }
 

@@ -67,15 +67,28 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
         }
     }
 
+    private Callback callback;
+
+    public interface Callback{
+        void onFinished(String result);
+    }
+
+    public EndpointsAsyncTask(Callback callback){
+        this.callback = callback;
+    }
+
     @Override
     protected void onPostExecute(String result) {
-        Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+        //Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+        if(result != null){
+            callback.onFinished(result);
+        }
     }
 }
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements EndpointsAsyncTask.Callback {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,7 +125,14 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(MOVIE_JOKE_KEY_EXTRA, joker.tellAJoke());
         startActivity(intent);
 
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Manfred"));
+        new EndpointsAsyncTask(this).execute(new Pair<Context, String>(this, "Manfred"));
 
+    }
+
+    @Override
+    public void onFinished(String result) {
+        Intent intent = new Intent(this, JokesActivity.class);
+        intent.putExtra(Intent.EXTRA_TEXT, result);
+        startActivity(intent);
     }
 }
